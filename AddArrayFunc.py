@@ -14,12 +14,11 @@ import sys
 #
 
 def simpleArraySum(ar):
-    # Write your code here
-    ar_count=6
-    ar=[1 ,2 ,3 ,4, 10 ,11]
-    return sum(ar)
+    x=0
+    for i in range(0,ar_count):
+        x = x + ar[i]
+    return x
     
-
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
@@ -30,5 +29,5 @@ if __name__ == '__main__':
     result = simpleArraySum(ar)
 
     fptr.write(str(result) + '\n')
-
     fptr.close()
+    
