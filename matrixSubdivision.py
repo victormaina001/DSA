@@ -1,4 +1,3 @@
-
 # returns an array of all possible 2 X 2 combinations
 def subdivide_matrix(two_dimensional_matrix):
     matrix_height = len(two_dimensional_matrix) - 1
@@ -12,7 +11,6 @@ def subdivide_matrix(two_dimensional_matrix):
             sub_matrices.append([first_row, second_row])
     
     return sub_matrices
-
 
 # finds largest value in each submatrix. Returns an array of arrays with only one element
 def find_largest_submatrix_value(three_D_array):
